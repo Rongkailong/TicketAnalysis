@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500px">
+    <ImageView
+        android:layout_centerInParent="true"
+        android:id="@+id/imageView"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10px"/>
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#ff5c28"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:text="均值分析"
+        android:id="@+id/tv"/>
+
+</RelativeLayout>

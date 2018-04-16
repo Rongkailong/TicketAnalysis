@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--主题色 状态栏颜色-->
+    <color name="app_color">#aa2319</color>
+    <color name="transparency">#80000000</color>
+    <color name="white">#FFFFFF</color>
+</resources>

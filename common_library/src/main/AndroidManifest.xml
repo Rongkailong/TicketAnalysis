@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rkl.common_library">
+    <!--权限申请-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application >
+    <!-- 百分比库适配，设计稿尺寸 -->
+    <meta-data
+        android:name="design_width"
+        android:value="768"/>
+    <meta-data
+        android:name="design_height"
+        android:value="1280"/>
+
+        <!-- 注册provider-->
+        <provider android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.a.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/file_paths"/>
+    </provider>
+        <activity android:name=".permission.permissionconfig.PermissionActivity"/>
+    </application>
+</manifest>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rkl.ticket.ticket_analysis">
+
+    <application
+        android:allowBackup="true"
+        android:name="AppApplication"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ViewPagerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SplashActivity"/>
+        <activity android:name=".MainFragmentActivity" />
+        <activity android:name=".WebViewActivity" />
+        <activity android:name=".firstfragment.view.TicketOpenInfoActivity" />
+        <activity android:name=".secondfragment.view.AnalysisActivity" />
+        <activity android:name=".secondfragment.view.AvgAnalysisActivity" />
+        <activity android:name=".secondfragment.view.SumAnalysisActivity" />
+        <activity android:name=".secondfragment.view.RateAnalysisActivity" />
+        <activity android:name=".secondfragment.view.ParityTrendAnalysisActivity" />
+        <activity android:name=".thirdfragment.view.CodeForcastActivity" />
+        <!--<service android:name="cn.jpush.android.service.DaemonService"-->
+            <!--android:enabled="true"-->
+            <!--android:exported="true">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="cn.jpush.android.service.DaemonService"/>-->
+                <!--<category android:name="com.rkl.ticket.ticket_analysis"/>-->
+            <!--</intent-filter>-->
+        <!--</service>-->
+        <!--<receiver-->
+            <!--android:name="MyReciver"-->
+            <!--android:enabled="true">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="cn.jpush.android.intent.REGISTRATION" />-->
+                <!--<action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />-->
+                <!--<action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />-->
+                <!--<action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />-->
+                <!--<category android:name="You com.rkl.ticket.ticket_analysis"/>-->
+            <!--</intent-filter>-->
+           <!--</receiver>-->
+
+    </application>
+
+</manifest>
